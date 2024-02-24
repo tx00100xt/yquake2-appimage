@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Yamagi Quake II is an alternative client for id Software's Quake II
+Categories=Game;Shooter;
+Exec=quake2
+Icon=Quake2
+Name=Yamagi Quake II
+StartupNotify=true
+PrefersNonDefaultGPU=true
+Terminal=false
+Type=Application
+Keywords=quake;first;person;shooter;multiplayer;

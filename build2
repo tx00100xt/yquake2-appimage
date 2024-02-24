@@ -1,0 +1,210 @@
+inuxdeploy version 1-alpha (git commit ID 2b73a21), GitHub actions build 261 built on 2024-02-01 01:03:24 UTC
+
+-- Creating basic AppDir structure -- 
+Creating directory AppDir/usr/bin/ 
+Creating directory AppDir/usr/lib/ 
+Creating directory AppDir/usr/share/applications/ 
+Creating directory AppDir/usr/share/icons/hicolor/ 
+Creating directory AppDir/usr/share/icons/hicolor/16x16/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/32x32/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/64x64/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/128x128/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/256x256/apps/ 
+Creating directory AppDir/usr/share/icons/hicolor/scalable/apps/ 
+
+-- Deploying dependencies for existing files in AppDir -- 
+Deploying dependencies for ELF file AppDir/usr/bin/ref_soft.so 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libm.so.6 
+Deploying shared library /usr/lib/libSDL2-2.0.so.0
+WARNING: Could not find copyright files for file /usr/lib/libSDL2-2.0.so.0 using dpkg-query 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libpthread.so.0 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libc.so.6 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libdl.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libsndio.so.6.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libsndio.so.6.1 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/librt.so.1 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libasound.so.2 
+Deploying shared library /lib/x86_64-linux-gnu/libbsd.so.0
+Deploying copyright files for file /lib/x86_64-linux-gnu/libbsd.so.0 
+Deploying dependencies for ELF file AppDir/usr/bin/ref_gles3.so 
+Deploying dependencies for ELF file AppDir/usr/bin/ref_gl1.so 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libz.so.1 
+Skipping deployment of blacklisted library /lib/x86_64-linux-gnu/libexpat.so.1 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libxcb-present.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libxcb-present.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libxshmfence.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libxshmfence.so.1 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libglapi.so.0 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXext.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXext.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXdamage.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXdamage.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXfixes.so.3
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXfixes.so.3 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libX11.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libxcb-glx.so.0
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libxcb-glx.so.0 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libxcb.so.1 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1 
+Skipping deployment of blacklisted library /usr/lib/x86_64-linux-gnu/libdrm.so.2 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXau.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXau.so.6 
+Deploying shared library /usr/lib/x86_64-linux-gnu/libXdmcp.so.6
+Deploying copyright files for file /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 
+Deploying dependencies for ELF file AppDir/usr/bin/quake2 
+Deploying dependencies for ELF file AppDir/usr/bin/q2ded 
+Deploying dependencies for ELF file AppDir/usr/bin/ref_gl3.so 
+
+-- Deploying executables -- 
+Deploying executable AppDir/usr/bin/quake2 
+WARNING: Could not find copyright files for file AppDir/usr/bin/quake2 using dpkg-query 
+Deploying dependencies for ELF file AppDir/usr/bin/quake2 
+
+-- Copying files into AppDir -- 
+Copying file AppDir/usr/bin/quake2 to AppDir/usr/bin/quake2 
+Copying file /lib/x86_64-linux-gnu/libbsd.so.0 to AppDir/usr/lib/libbsd.so.0 
+Copying file /usr/lib/libSDL2-2.0.so.0 to AppDir/usr/lib/libSDL2-2.0.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libXau.so.6 to AppDir/usr/lib/libXau.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXdamage.so.1 to AppDir/usr/lib/libXdamage.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 to AppDir/usr/lib/libXdmcp.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXext.so.6 to AppDir/usr/lib/libXext.so.6 
+Copying file /usr/lib/x86_64-linux-gnu/libXfixes.so.3 to AppDir/usr/lib/libXfixes.so.3 
+Copying file /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1 to AppDir/usr/lib/libXxf86vm.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libsndio.so.6.1 to AppDir/usr/lib/libsndio.so.6.1 
+Copying file /usr/lib/x86_64-linux-gnu/libxcb-glx.so.0 to AppDir/usr/lib/libxcb-glx.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libxcb-present.so.0 to AppDir/usr/lib/libxcb-present.so.0 
+Copying file /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1 to AppDir/usr/lib/libxcb-sync.so.1 
+Copying file /usr/lib/x86_64-linux-gnu/libxshmfence.so.1 to AppDir/usr/lib/libxshmfence.so.1 
+Copying file /usr/share/doc/libbsd0/copyright to AppDir/usr/share/doc/libbsd0/copyright 
+Copying file /usr/share/doc/libsndio6.1/copyright to AppDir/usr/share/doc/libsndio6.1/copyright 
+Copying file /usr/share/doc/libxau6/copyright to AppDir/usr/share/doc/libxau6/copyright 
+Copying file /usr/share/doc/libxcb-glx0/copyright to AppDir/usr/share/doc/libxcb-glx0/copyright 
+Copying file /usr/share/doc/libxcb-present0/copyright to AppDir/usr/share/doc/libxcb-present0/copyright 
+Copying file /usr/share/doc/libxcb-sync1/copyright to AppDir/usr/share/doc/libxcb-sync1/copyright 
+Copying file /usr/share/doc/libxdamage1/copyright to AppDir/usr/share/doc/libxdamage1/copyright 
+Copying file /usr/share/doc/libxdmcp6/copyright to AppDir/usr/share/doc/libxdmcp6/copyright 
+Copying file /usr/share/doc/libxext6/copyright to AppDir/usr/share/doc/libxext6/copyright 
+Copying file /usr/share/doc/libxfixes3/copyright to AppDir/usr/share/doc/libxfixes3/copyright 
+Copying file /usr/share/doc/libxshmfence1/copyright to AppDir/usr/share/doc/libxshmfence1/copyright 
+Copying file /usr/share/doc/libxxf86vm1/copyright to AppDir/usr/share/doc/libxxf86vm1/copyright 
+Calling strip on library AppDir/usr/bin/quake2 
+Calling strip on library AppDir/usr/lib/libSDL2-2.0.so.0 
+Calling strip on library AppDir/usr/lib/libXau.so.6 
+Calling strip on library AppDir/usr/lib/libXdamage.so.1 
+Calling strip on library AppDir/usr/lib/libXdmcp.so.6 
+Calling strip on library AppDir/usr/lib/libXext.so.6 
+Calling strip on library AppDir/usr/lib/libXfixes.so.3 
+Calling strip on library AppDir/usr/lib/libXxf86vm.so.1 
+Calling strip on library AppDir/usr/lib/libbsd.so.0 
+Calling strip on library AppDir/usr/lib/libsndio.so.6.1 
+Calling strip on library AppDir/usr/lib/libxcb-glx.so.0 
+Calling strip on library AppDir/usr/lib/libxcb-present.so.0 
+Calling strip on library AppDir/usr/lib/libxcb-sync.so.1 
+Calling strip on library AppDir/usr/lib/libxshmfence.so.1 
+Setting rpath in ELF file AppDir/usr/bin/q2ded to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/quake2 to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/ref_gl1.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/ref_gl3.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/ref_gles3.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/bin/ref_soft.so to $ORIGIN/../lib 
+Setting rpath in ELF file AppDir/usr/lib/libSDL2-2.0.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXau.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXdamage.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXdmcp.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXext.so.6 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXfixes.so.3 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libXxf86vm.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libbsd.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libsndio.so.6.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libxcb-glx.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libxcb-present.so.0 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libxcb-sync.so.1 to $ORIGIN 
+Setting rpath in ELF file AppDir/usr/lib/libxshmfence.so.1 to $ORIGIN 
+
+-- Deploying icons -- 
+Deploying icon AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png 
+WARNING: Could not find copyright files for file AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png using dpkg-query 
+
+-- Deploying desktop files -- 
+Deploying desktop file AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop 
+
+-- Copying files into AppDir -- 
+Copying file AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop to AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop 
+Copying file AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png to AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png 
+
+-- Deploying files into AppDir root directory -- 
+Deploying files to AppDir root using desktop file: AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop 
+Deploying desktop file to AppDir root: AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop 
+Creating symlink for file AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop in/as AppDir 
+Deploying icon to AppDir root: AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png 
+Creating symlink for file AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png in/as AppDir 
+Deploying AppRun symlink for executable in AppDir root: AppDir/usr/bin/quake2 
+Creating symlink for file AppDir/usr/bin/quake2 in/as AppDir/AppRun 
+
+-- Running output plugin: appimage -- 
+[appimage/stdout] Found appimagetool: /tmp/.mount_linuxd9WKy1W/plugins/linuxdeploy-plugin-appimage/usr/bin/appimagetool
+[appimage/stderr] Warning: please use $LDAI_SIGN instead of $SIGN
+[appimage/stderr] Running command: /tmp/.mount_linuxd9WKy1W/plugins/linuxdeploy-plugin-appimage/usr/bin/appimagetool "AppDir" "-s"
+[appimage/stderr] 
+[appimage/stdout] 
+[appimage/stderr] appimagetool, continuous build (commit 5735cc5), build <local dev build> built on 2023-03-08 22:52:04 UTC
+[appimage/stdout] WARNING: appstreamcli command is missing, please install it if you want to use AppStream metadata
+[appimage/stderr] Using architecture x86_64
+[appimage/stderr] Deleting pre-existing .DirIcon
+[appimage/stderr] Creating .DirIcon symlink based on information from desktop file
+[appimage/stderr] AppStream upstream metadata found in usr/share/metainfo/org.yamagi.YamagiQ2.appdata.xml
+[appimage/stderr] Generating squashfs...
+[appimage/stderr] Embedding ELF...
+[appimage/stdout] Parallel mksquashfs: Using 4 processors
+[appimage/stdout] Creating 4.0 filesystem on Yamagi_Quake_II-x86_64.AppImage, block size 131072.
+[appimage/stdout] [===============================================================/] 119/119 100%
+[appimage/stdout] 
+[appimage/stdout] Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+[appimage/stdout] 	compressed data, compressed metadata, compressed fragments,
+[appimage/stdout] 	compressed xattrs, compressed ids
+[appimage/stdout] 	duplicates are removed
+[appimage/stdout] Filesystem size 4801.23 Kbytes (4.69 Mbytes)
+[appimage/stdout] 	41.89% of uncompressed filesystem size (11461.78 Kbytes)
+[appimage/stdout] Inode table size 1166 bytes (1.14 Kbytes)
+[appimage/stdout] 	40.39% of uncompressed inode table size (2887 bytes)
+[appimage/stdout] Directory table size 786 bytes (0.77 Kbytes)
+[appimage/stdout] 	45.88% of uncompressed directory table size (1713 bytes)
+[appimage/stdout] Number of duplicate files found 2
+[appimage/stdout] Number of inodes 76
+[appimage/stdout] Number of files 37
+[appimage/stdout] Number of fragments 7
+[appimage/stdout] Number of symbolic links  4
+[appimage/stdout] Number of device nodes 0
+[appimage/stdout] Number of fifo nodes 0
+[appimage/stdout] Number of socket nodes 0
+[appimage/stdout] Number of directories 35
+[appimage/stdout] Number of ids (unique uids + gids) 1
+[appimage/stdout] Number of uids 1
+[appimage/stdout] 	root (0)
+[appimage/stdout] Number of gids 1
+[appimage/stdout] 	root (0)
+[appimage/stderr] Marking the AppImage as executable...
+[appimage/stderr] Embedding MD5 digest
+[appimage/stderr] [sign] signing requested
+[appimage/stderr] [sign] found gpgme version 1.17.1
+[appimage/stderr] [sign] found gcrypt version 1.10.1
+[appimage/stderr] [sign] calculated digest: 6f3670f2843243691a52a79fb96b6a57a5c851d75d4448b608189b98b3dc1050
+[appimage/stderr] [sign] using engine OpenPGP (found in /usr/bin/gpg2), version 2.1.11, gpgme requires at least version 1.4.0
+[appimage/stderr] [sign] warning: gpg 2.1.x detected, APPIMAGETOOL_FORCE_SIGN can only work with allow-loopback-entry set within the gpg-agent configuration
+[appimage/stderr] [sign] using key with fingerprint 22597310B903C099BF99768ED1B5B78AC4A5311C, issuer name Alexander Pavlov
+[appimage/stderr] [sign] signed using pubkey algo RSA, hash algo SHA256, key fingerprint 6E9137E3B0FE3FDC67D70F2ECDC41982C027BAAA
+[appimage/stderr] [sign] embedding signature in AppImage
+[appimage/stdout] /home/jcryton/AppImage/OTHER/yquake2-appimage/AppDir should be packaged as Yamagi_Quake_II-x86_64.AppImage
+[appimage/stderr] [sign] embedding key in AppImage
+[appimage/stderr] Success
+[appimage/stderr] 
+[appimage/stderr] Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+[appimage/stderr] central directory of available AppImages, by opening a pull request
+[appimage/stderr] at https://github.com/AppImage/appimage.github.io
