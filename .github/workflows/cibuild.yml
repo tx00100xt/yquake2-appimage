@@ -25,7 +25,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -qq -y libsdl2-dev libogg-dev libvorbis-dev &&
           sudo apt-get install -qq -y bison flex zlib1g-dev libxxhash-dev &&
-          sudo apt-get install libvulkan1 libvulkan-dev
+          sudo apt-get install libcurl4-nss-dev
           
     - name: Get current date
       id: date
