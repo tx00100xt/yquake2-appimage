@@ -53,10 +53,10 @@ jobs:
         run: |
           cd ${{github.workspace}}
           ./build-ogl.sh
-          mv -f ${{github.workspace}}/Yamagi_Quake_II-8.3.0-x86_64.AppImage Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.3.0-x86_64.AppImage
+          mv -f ${{github.workspace}}/Yamagi_Quake_II-8.41-x86_64.AppImage Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.41-x86_64.AppImage
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.3.0-x86_64.AppImage
-          path: Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.3.0-x86_64.AppImage
+          name: Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.41-x86_64.AppImage
+          path: Yamagi_Quake_II-${{ steps.date.outputs.time }}-8.41-x86_64.AppImage

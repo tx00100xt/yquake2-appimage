@@ -72,5 +72,5 @@ cp -f zaero/build/Release/game.so AppDir/usr/bin/zaero
 SIGN=1 ./linuxdeploy-x86_64.AppImage --executable AppDir/usr/bin/quake2 --desktop-file AppDir/usr/share/applications/org.yamagi.YamagiQ2.desktop --icon-file AppDir/usr/share/icons/hicolor/128x128/apps/Quake2.png --appdir AppDir --output appimage
 
 # rename appimage
-mv Yamagi_Quake_II-x86_64.AppImage Yamagi_Quake_II-8.3.0-x86_64.AppImage
-chmod +x Yamagi_Quake_II-8.3.0-x86_64.AppImage
+mv Yamagi_Quake_II-x86_64.AppImage Yamagi_Quake_II-8.41-x86_64.AppImage
+chmod +x Yamagi_Quake_II-8.41-x86_64.AppImage
