@@ -22,6 +22,7 @@ make -j4
 cd ..
 cd ..
 cp -ax yquake2/build/release/* AppDir/usr/bin
+cp -ax Img/yamagi2.bmp AppDir/usr/bin
 
 # xatrix
 git clone https://github.com/yquake2/xatrix.git
@@ -56,7 +57,7 @@ cp -f rogue/build/Release/game.so AppDir/usr/bin/rogue
 # zaero
 git clone https://github.com/yquake2/zaero.git
 cd zaero
-patch -p1 < ../patches/0002-zaero-AppImage.patch
+#patch -p1 < ../patches/0002-zaero-AppImage.patch
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j4

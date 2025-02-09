@@ -1,0 +1,87 @@
+--- a/CMakeLists.txt	2025-02-09 15:48:28.330177049 +0300
++++ b/CMakeLists.txt	2025-02-09 15:50:29.300177174 +0300
+@@ -424,6 +424,7 @@
+ 	)
+ 
+ set(Client-Source
++	${CLIENT_SRC_DIR}/appimage.c
+ 	${CLIENT_SRC_DIR}/cl_cin.c
+ 	${CLIENT_SRC_DIR}/cl_console.c
+ 	${CLIENT_SRC_DIR}/cl_download.c
+@@ -750,7 +750,7 @@
+ 			RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/release
+ 			)
+ 	target_link_libraries(quake2 ${yquake2LinkerFlags} ${yquake2ClientLinkerFlags}
+-		${yquake2SDLLinkerFlags} ${yquake2ZLibLinkerFlags})
++		${yquake2SDLLinkerFlags} ${yquake2ZLibLinkerFlags} -lGL -lGLEW -lSDL2_image)
+ 	if(SDL3_SUPPORT)
+ 		target_link_libraries(quake2 SDL3::SDL3)
+ 	endif()
+--- a/src/client/curl/download.c	2024-02-24 00:33:39.399633405 +0300
++++ b/src/client/curl/download.c	2024-02-24 00:32:38.274295636 +0300
+@@ -74,6 +74,9 @@
+  * In memory buffer for receiving files. Used
+  * as special CURL callback for filelists.
+  */
++#ifndef CURLINFO_CONTENT_LENGTH_DOWNLOAD_T
++#define CURLINFO_CONTENT_LENGTH_DOWNLOAD_T CURLINFO_CONTENT_LENGTH_DOWNLOAD
++#endif
+ static size_t CL_HTTP_Recv(void *ptr, size_t size, size_t nmemb, void *stream)
+ {
+ 	dlhandle_t *dl = (dlhandle_t *)stream;
+--- a/src/client/cl_console.c	2024-02-23 00:12:53.804891093 +0300
++++ b/src/client/cl_console.c	2024-02-23 00:10:21.807597190 +0300
+@@ -27,6 +27,10 @@
+ #include "header/client.h"
+ #include "sound/header/local.h"
+ #include <time.h>
++#include <SDL2/SDL.h>
++#include <unistd.h>
++#include <pwd.h>
++#include "appimage.h"
+ 
+ console_t con;
+ cvar_t *con_notifytime;
+@@ -335,6 +338,26 @@
+ 	con.display = con.current;
+ }
+ 
++int 
++AppImage_TestFile(const char *_home_TestFile)
++{
++	char _fnm_home_TestFile[4096];
++	struct passwd *pw = getpwuid(getuid());
++	const char *_homedir = pw->pw_dir;
++	strcpy(_fnm_home_TestFile, _homedir);
++	_fnm_home_TestFile[strlen(_homedir)] = 0x00;
++	strncat (_fnm_home_TestFile, _home_TestFile, strlen(_home_TestFile));
++	printf("Test file: %s\n", (const char *) _fnm_home_TestFile);
++	if( access((const char *) _fnm_home_TestFile, F_OK) == 0 ) {
++		printf("Found path: %s\n", (const char *) _fnm_home_TestFile);
++		return 1;
++	} else {
++		printf("ERROR: Game data not found!\n");
++		return 0;
++	}
++ 	return 1;
++}
++
+ void
+ Con_Init(void)
+ {
+@@ -354,6 +438,15 @@
+ 	Cmd_AddCommand("clear", Con_Clear_f);
+ 	Cmd_AddCommand("condump", Con_Dump_f);
+ 	con.initialized = true;
++	int appimage_test_pak0 = AppImage_TestFile("/.yq2/baseq2/pak0.pak");
++	if( appimage_test_pak0 == 0 ) {
++		appCreate(1280, 720);
++		appRun();
++		shpExit();
++		sprExit();
++		appExit();
++		exit(1);
++	}
+ }
+ 
+ void
